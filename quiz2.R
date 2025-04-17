@@ -29,7 +29,7 @@ ncol(df_females)
 
 #Q5:
 df_males <- nfhs %>%
-  select(hhid, matches("^hb[0-6]_\\d{2}$"))
+  select(hhid, hb0_01:hb0_18, hb1_01:hb1_18, hb2_01:hb2_18, hb3_01:hb3_18, hb4_01:hb4_18, hb5_01:hb5_18, hb6_01:hb6_18)
 
 names(df_males)
 #checking output
